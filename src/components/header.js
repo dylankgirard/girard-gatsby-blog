@@ -5,11 +5,13 @@ const Header = () => {
     return (
         <header>
             <h1><Link to="/">Dylan Girard - Software Engineer</Link></h1>
+            <nav>
             <ul>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
             </ul>
+            </nav>
         </header>
     )
 }

@@ -1,5 +1,7 @@
-
-
 module.exports = {
-  plugins: ["gatsby-plugin-sass"],
+  siteMetadata: {
+    title: 'DG Gatsby Blog',
+    author: 'Dylan Girard'
+  },
+  plugins: ["gatsby-plugin-sass"]
 }

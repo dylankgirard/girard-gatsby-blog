@@ -31,7 +31,6 @@ const BlogPage = () => {
           <li key={i}>
             <Link to={`/blog/${blog.node.fields.slug}`}>
               <h2>{blog.node.frontmatter.title}</h2>
-
               <p>{blog.node.frontmatter.date}</p>
             </Link>
           </li>

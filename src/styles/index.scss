@@ -619,6 +619,12 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
+
+/* I added this */
+.gatsby-resp-image-wrapper {
+    margin-left: 0 !important;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
+import * as blogStyles from './blog.module.scss' 
 
 const BlogPage = () => {
   const blogData = useStaticQuery(graphql`
@@ -26,9 +27,9 @@ const BlogPage = () => {
   return (
     <Layout>
       <h1>Blog</h1>
-      <ol>
+      <ol className={blogStyles.posts}>
         {blogArr.map((blog, i) => (
-          <li key={i}>
+          <li className={blogStyles.post} key={i}>
             <Link to={`/blog/${blog.node.fields.slug}`}>
               <h2>{blog.node.frontmatter.title}</h2>
               <p>{blog.node.frontmatter.date}</p>

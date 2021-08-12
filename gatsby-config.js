@@ -1,9 +1,11 @@
+
 module.exports = {
   siteMetadata: {
     title: "DG Gatsby Blog",
     author: "Dylan Girard",
   },
   plugins: [
+    "gatsby-image",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-source-contentful",
@@ -14,13 +16,14 @@ module.exports = {
     },
     "gatsby-plugin-sass",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "src",
-        path: `${__dirname}/src/`,
+        name: `assets`,
+        path: `${__dirname}/src/assets`,
       },
     },
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {

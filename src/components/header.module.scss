@@ -8,7 +8,7 @@ $jura-font: 'Jura', sans-serif;
 }
 
 .title {
-    color: black;
+    color: white;
     font-family: $jura-font;
     font-size: 3rem;
     text-decoration: none;
@@ -21,16 +21,16 @@ $jura-font: 'Jura', sans-serif;
 }
 
 .nav-item {
-    color: #999999;
+    color: white;
     font-size: .9rem;
     margin-right: 1.3rem;
     text-decoration: none;
 }
 
 .nav-item:hover {
-    color: #666666;
+    color: #bdbdbd;
 }
 
 .active-nav-item {
-    color: #333333;
+    color: #efb678;
 }

@@ -1,31 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+$play-font: 'Play', sans-serif;
+
+h1 {
+    font-family: $play-font;
+    color: white;
+}
+
 .posts {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 }
 
 .post {
-    margin: 1rem 0;
+  margin: 1rem 0;
 
-    a {
-        background: #f4f4f4;
-        color: black;
-        display: block;
-        padding: 1rem;
-        text-decoration: none;
-    }
+  a {
+    background: #f4f4f4;
+    color: black;
+    display: block;
+    border-radius: 5px;
+    padding: 1rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
 
-    a:hover {
-        background: #e4e4e4;
-    }
+  a:hover {
+    background: #e4e4e4;
+  }
 
-    h2 {
-        margin-bottom: 0;
+  h2 {
+    margin-bottom: 0;
+    font-family: $play-font;
+  }
 
-    }
-
-    p {
-        color: #777777;
-        font-size: .8rem;
-        font-style: italic;
-    }
+  p {
+    color: #777777;
+    font-family: $play-font;
+    font-size: 0.8rem;
+    font-style: italic;
+  }
 }

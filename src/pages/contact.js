@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <Layout>
       <Head title="Contact" />
-      <h1>Contact Me!</h1>
+      <h1>Contact</h1>
       <p>
         Want to talk? Reach me at{" "}
         <Link to="https://www.dylankgirard.com" target="_blank">

@@ -1,5 +1,9 @@
 /* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
 
+@import url("https://fonts.googleapis.com/css2?family=Jura&display=swap");
+
+$jura-font: "Jura", sans-serif;
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -624,11 +628,12 @@ pre tt:after {
 
 .landing-vid {
   z-index: -1;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
-  left: 0;
   top: 0;
-  min-width: 100%;
-  min-height: 100%;
+  left: 0;
 }
 
 @media only screen and (max-width: 480px) {

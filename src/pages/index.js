@@ -11,10 +11,6 @@ const IndexPage = (props) => {
       <h1>Hi There,</h1>
       <h2>I'm Dylan, a software developer from LA!</h2>
       <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-      <br />
-      <p>
-        Need a developer? <Link to="/contact">Contact Me.</Link>
-      </p>
     </Layout>
   )
 }

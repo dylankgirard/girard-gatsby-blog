@@ -29,7 +29,8 @@ export const query = graphql`
   }
 `
 
-const Blog = props => {
+const Blog = (props) => {
+  
   const imgSrc = props.data.contentfulBlogPost.body.references[0].fixed.src
 
   const options = {

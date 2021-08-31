@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura&display=swap');
+
+$jura-font: 'Jura', sans-serif;
+
 .header {
+    font-family: $jura-font;
     padding: 1rem 0 3rem;
 }
 
 .title {
     color: black;
+    font-family: $jura-font;
     font-size: 3rem;
     text-decoration: none;
 }

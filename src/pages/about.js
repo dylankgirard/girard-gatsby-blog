@@ -10,7 +10,6 @@ const AboutPage = props => {
     <Layout>
       <Head title="About" />
       <h1>About Me</h1>
-
       <h2>I grew up in Oregon, and I also play the trumpet.</h2>
       <Img fluid={props.data.imageOne.childImageSharp.fluid} />
       <br/>

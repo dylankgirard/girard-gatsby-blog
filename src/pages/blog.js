@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
+import PageTransition from "gatsby-plugin-page-transitions"
 import Layout from "../components/layout"
 import * as blogStyles from "./blog.module.scss"
 import Head from "../components/head"
@@ -23,20 +24,22 @@ const BlogPage = () => {
   const blogArr = blogData.allContentfulBlogPost.edges
 
   return (
-    <Layout>
-      <Head title="Blog" />
-      <h1>Blog</h1>
-      <ol className={blogStyles.posts}>
-        {blogArr.map((blog, i) => (
-          <li className={blogStyles.post} key={i}>
-            <Link to={`/blog/${blog.node.slug}`}>
-              <h2>{blog.node.title}</h2>
-              <p>{blog.node.publishedDate}</p>
-            </Link>
-          </li>
-        ))}
-      </ol>
-    </Layout>
+    <PageTransition>
+      <Layout>
+        <Head title="Blog" />
+        <h1>Blog</h1>
+        <ol className={blogStyles.posts}>
+          {blogArr.map((blog, i) => (
+            <li className={blogStyles.post} key={i}>
+              <Link to={`/blog/${blog.node.slug}`}>
+                <h2>{blog.node.title}</h2>
+                <p>{blog.node.publishedDate}</p>
+              </Link>
+            </li>
+          ))}
+        </ol>
+      </Layout>
+    </PageTransition>
   )
 }
 

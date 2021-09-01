@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+$play-font: 'Play', sans-serif;
+
+p {
+    font-family: $play-font;
+    color: white;
+}
+
+.blog-date {
+    font-style: italic;
+}

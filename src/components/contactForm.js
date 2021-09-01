@@ -18,6 +18,8 @@ const ContactForm = () => {
       data-netlify-honeypot="bot-field"
       onSubmit={handleSubmit}
     >
+      <input type="hidden" name="form-name" value="contact" />
+      
       <label>Email</label>
       {lineBreak}
 

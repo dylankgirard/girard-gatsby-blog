@@ -2,31 +2,41 @@ import React from "react"
 import * as contactStyles from "./contactForm.module.scss"
 
 // JSX doesn't like a single </br> tag
-const lineBreak = () => <br></br>
 
 const ContactForm = () => {
+  const lineBreak = () => <br></br>
+
+  const handleSubmit = event => {
+    event.preventDefault()
+  }
+
   return (
-    <form className={contactStyles.contactform}>
+    <form
+      className={contactStyles.contactform}
+      method="POST"
+      onSubmit={handleSubmit}
+      data-netlify="true"
+      name="contact"
+    >
       <label>Email</label>
-      {lineBreak()}
+      {lineBreak}
 
       <input type="text" name="email"></input>
-      {lineBreak()}
+      {lineBreak}
 
       <label>Name</label>
-      {lineBreak()}
+      {lineBreak}
 
       <input type="text" name="name"></input>
-      {lineBreak()}
+      {lineBreak}
 
       <label>Your Message</label>
-      {lineBreak()}
+      {lineBreak}
 
       <input type="text" name="message"></input>
-      {lineBreak()}
+      {lineBreak}
 
       <input type="submit" type="Submit"></input>
-      
     </form>
   )
 }

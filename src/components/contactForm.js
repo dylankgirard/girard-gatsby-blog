@@ -2,7 +2,6 @@ import React from "react"
 import * as contactStyles from "./contactForm.module.scss"
 
 // JSX doesn't like a single </br> tag
-
 const ContactForm = () => {
   const lineBreak = () => <br></br>
 
@@ -13,10 +12,11 @@ const ContactForm = () => {
   return (
     <form
       className={contactStyles.contactform}
-      method="POST"
-      onSubmit={handleSubmit}
-      data-netlify="true"
       name="contact"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+      onSubmit={handleSubmit}
     >
       <label>Email</label>
       {lineBreak}

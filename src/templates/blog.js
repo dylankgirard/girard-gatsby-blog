@@ -49,7 +49,7 @@ const Blog = (props) => {
     <Layout>
       <Head title={props.data.contentfulBlogPost.title} />
       <h1>{props.data.contentfulBlogPost.title}</h1>
-      <p className="blog-date">{props.data.contentfulBlogPost.publishedDate}</p>
+      <p className={blogPostStyles.blogdate}>{props.data.contentfulBlogPost.publishedDate}</p>
       {documentToReactComponents(
         JSON.parse(props.data.contentfulBlogPost.body.raw),
         options

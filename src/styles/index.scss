@@ -636,6 +636,11 @@ pre tt:after {
   left: 0;
 }
 
+.about-link {
+  text-decoration: none;
+  color: #efb578;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;

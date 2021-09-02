@@ -1,8 +1,10 @@
 import React from "react"
 import * as contactStyles from "./contactForm.module.scss"
 
-// JSX doesn't like a single </br> tag
+
 const ContactForm = () => {
+  
+  // JSX doesn't like a single </br> tag
   const lineBreak = () => <br></br>
 
   const handleSubmit = event => {
@@ -19,7 +21,7 @@ const ContactForm = () => {
       onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
-      
+
       <label>Email</label>
       {lineBreak}
 

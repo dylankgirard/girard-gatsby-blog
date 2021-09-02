@@ -1,15 +1,13 @@
 import React from "react"
 import * as contactStyles from "./contactForm.module.scss"
 
-
 const ContactForm = () => {
-  
   // JSX doesn't like a single </br> tag
   const lineBreak = () => <br></br>
 
-  const handleSubmit = event => {
-    event.preventDefault()
-  }
+  // const handleSubmit = event => {
+  //   event.preventDefault()
+  // }
 
   return (
     <form
@@ -18,26 +16,26 @@ const ContactForm = () => {
       method="post"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
-      onSubmit={handleSubmit}
+      // onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value="contact" />
 
       <label>Email</label>
       {lineBreak}
 
-      <input type="text" name="email"></input>
+      <input type="email" name="email"></input>
       {lineBreak}
 
       <label>Name</label>
       {lineBreak}
 
-      <input type="text" name="name"></input>
+      <input type="textarea" name="name"></input>
       {lineBreak}
 
       <label>Your Message</label>
       {lineBreak}
 
-      <input type="text" name="message"></input>
+      <input type="textarea" name="message"></input>
       {lineBreak}
 
       <input type="submit" type="Submit"></input>

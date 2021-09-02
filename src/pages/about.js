@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
 import Head from "../components/head"
-import Img from "gatsby-image"
+// import Img from "gatsby-image"
 
-import { Link, graphql } from "gatsby"
+import { Link } from "gatsby"
 
-const AboutPage = props => {
+const AboutPage = () => {
   return (
     <Layout>
       <Head title="About" />
@@ -29,4 +29,3 @@ const AboutPage = props => {
 }
 
 export default AboutPage
-

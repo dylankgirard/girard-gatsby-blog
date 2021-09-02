@@ -30,18 +30,3 @@ const AboutPage = props => {
 
 export default AboutPage
 
-export const query = graphql`
-  query {
-    imageOne: file(
-      relativePath: {
-        eq: "Sunrise-landscape-Mountain-meadow-flower-red-sky-Sparks-Lake-Deschutes-National-Forest-Oregon-USА-1920x1080.jpg"
-      }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1000) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`

@@ -15,19 +15,19 @@ const ContactForm = () => {
     >
       <input type="hidden" name="form-name" value="contact" />
 
-      <label>Email</label>
+      <label htmlFor="email">Email</label>
       {lineBreak}
 
       <input type="email" name="email"></input>
       {lineBreak}
 
-      <label>Name</label>
+      <label htmlFor="name">Name</label>
       {lineBreak}
 
       <input type="textarea" name="name"></input>
       {lineBreak}
 
-      <label>Your Message</label>
+      <label htmlFor="message">Your Message</label>
       {lineBreak}
 
       <input type="textarea" name="message"></input>

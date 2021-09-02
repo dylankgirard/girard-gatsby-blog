@@ -5,8 +5,6 @@ import Head from "../components/head"
 import Layout from "../components/layout"
 import * as blogPostStyles from "./blogpost.scss"
 
-
-
 export const query = graphql`
   query ($slug: String!) {
     contentfulBlogPost(slug: { eq: $slug }) {

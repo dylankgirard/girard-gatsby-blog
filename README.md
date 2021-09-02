@@ -4,7 +4,7 @@
 
 A simple [blog](https://girard-blog.netlify.app/) using Gatsby.js as a Frontend, and the Contentful CMS as a dynamic backend. All queries use the Gatsby GraphQL API.
 
-Styling is written in SASS syntax, and the site is deployed on Netlify. The contact page uses a Netlify integration to collect user messages submitted with the Contact Form, which are then forwarded to my email address.
+Styling is written in SCSS, and the site is deployed on Netlify. The contact page uses a Netlify integration to collect user messages submitted with the Contact Form component, which are then forwarded to my email address.
 
 ### Credits
 
